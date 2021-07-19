@@ -1,12 +1,16 @@
 body {
   margin: 0;
+  background-color: rgb(51, 54, 75);
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(59, 56, 56);
+  justify-content: space-around;
+  background-color: rgb(33, 34, 48);
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar > ul {
@@ -25,7 +29,11 @@ body {
 }
 
 .navbar a.active {
-  color: rgb(240, 124, 124);
+  color: rgb(152, 240, 243);
+}
+
+header img {
+  padding-top: 3rem;
 }
 
 img {
@@ -34,13 +42,20 @@ img {
   display: block;
 }
 
+.section-padding {
+  padding-top: 4rem;
+  margin-top: 0;
+}
+
 p,
 h1 {
   margin: 1rem;
+  color: white;
+  line-height: 2rem;
 }
 
 .faq-answer::before {
-  content: "→";
+  content: "→   ";
 }
 
 .container {
@@ -69,7 +84,9 @@ h1 {
   z-index: 1;
 }
 
-
+.footer {
+  flex-shrink: 0;
+}
   figure {
     margin: 0;
     position: relative;
@@ -94,5 +111,32 @@ h1 {
     filter: grayscale(100%);
     display: block;
     opacity: 80%;
+  }
+
+  .aspect-ratio-16-9 {
+    padding-top: 56.25%;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .aspect-ratio-16-9 iframe {
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-image {
+    scroll-snap-align: end;
   }
 }
