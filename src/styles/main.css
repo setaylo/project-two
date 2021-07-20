@@ -12,9 +12,10 @@ body {
 
 .dreamsauce {
   font-style: italic;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 100;
-  font-size: 24pt;
+  font-size: 20pt;
+  text-align: center;
 }
 
 .intro {
@@ -125,61 +126,87 @@ img {
 .footer {
   position: fixed;
   bottom: 0;
+  z-index: -1;
 }
-  figure {
-    margin: 0;
-    position: relative;
-  }
+figure {
+  margin: 0;
+  position: relative;
+}
 
-  figure::after {
-    mix-blend-mode: multiply;
-    content: "";
-    display: block;
-    background: rgb(143, 141, 245);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
+figure::after {
+  mix-blend-mode: multiply;
+  content: "";
+  display: block;
+  background: rgb(143, 141, 245);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  footer img {
-    width: 100%;
-    filter: grayscale(100%);
-    display: block;
-    opacity: 80%;
-  }
+.aspect-ratio-16-9 {
+  padding-top: 56.25%;
+  position: relative;
+  z-index: -1;
+}
 
-  .aspect-ratio-16-9 {
-    padding-top: 56.25%;
-    position: relative;
-    z-index: -1;
-  }
+.video-padding {
+  padding-top: 3rem;
+}
 
-  .video-padding {
-    padding-top: 3rem;
-  }
-  
-  .aspect-ratio-16-9 iframe {
-    position: absolute;
-    top: 3.5rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+.aspect-ratio-16-9 iframe {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  .carousel {
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-image {
+  scroll-snap-align: end;
+}
+
+@media (min-width: 1280px) {
+  .home-section {
     display: flex;
-    flex-direction: row;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-top: 0;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 
-  .carousel-image {
-    scroll-snap-align: end;
+  .dreamsauce {
+    font-size: 40pt;
+    background-color: rgba(29, 29, 56, 0.432);
+  }
+
+  .home-paragraph {
+    background-color: rgba(13, 13, 26, 0.712);
+    margin: 5rem;
+    font-size: 24pt;
+    text-align: center;
+  }
+  .navbar {
+    gap: 30rem;
+  }
+
+  .navbar > ul {
+    gap: 2rem;
+    font-size: 20pt;
   }
 }
