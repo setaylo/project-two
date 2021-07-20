@@ -5,11 +5,26 @@ body {
 
 .heading-style {
   font-style: italic;
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 20pt;
+}
+
+.dreamsauce {
+  font-style: italic;
   font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 24pt;
+}
+
+.intro {
+  font-size: 14pt;
+  font-family: monospace;
 }
 
 .paragraph-style {
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
+  font-size: 14pt;
 }
 
 p,
@@ -49,6 +64,11 @@ h1 {
   color: rgb(152, 240, 243);
 }
 
+.nav-font {
+  font-family: monospace;
+  font-size: 12pt;
+}
+
 header img {
   padding-top: 3rem;
 }
@@ -60,11 +80,9 @@ img {
 }
 
 .section-padding {
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   margin-top: 0;
 }
-
-
 
 .faq-answer::before {
   content: "→   ";
@@ -96,8 +114,17 @@ img {
   z-index: 1;
 }
 
+.logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
 .footer {
-  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
 }
   figure {
     margin: 0;
@@ -129,6 +156,10 @@ img {
     padding-top: 56.25%;
     position: relative;
     z-index: -1;
+  }
+
+  .video-padding {
+    padding-top: 3rem;
   }
   
   .aspect-ratio-16-9 iframe {
