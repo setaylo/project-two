@@ -3,6 +3,23 @@ body {
   background-color: rgb(51, 54, 75);
 }
 
+.heading-style {
+  font-style: italic;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.paragraph-style {
+  font-family: 'Roboto Mono', monospace;
+}
+
+p,
+h1 {
+  margin: 1rem;
+  color: white;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -47,12 +64,7 @@ img {
   margin-top: 0;
 }
 
-p,
-h1 {
-  margin: 1rem;
-  color: white;
-  line-height: 2rem;
-}
+
 
 .faq-answer::before {
   content: "→   ";
