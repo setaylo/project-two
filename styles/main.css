@@ -13,9 +13,11 @@ body {
 .dreamsauce {
   font-style: italic;
   font-family: "Exo 2", sans-serif;
-  font-weight: 100;
+  font-weight: bolder;
+  background-color: rgba(29, 29, 56, 0.822);
   font-size: 20pt;
   text-align: center;
+  color: rgb(248, 6, 167);
 }
 
 .intro {
@@ -62,7 +64,7 @@ h1 {
 }
 
 .navbar a.active {
-  color: rgb(152, 240, 243);
+  color: rgb(248, 6, 167);
 }
 
 .nav-font {
@@ -196,12 +198,13 @@ figure::after {
 
   .paragraph-style {
     margin-bottom: 0;
-    font-size: 11pt;
   }
 
   .dreamsauce {
-    font-size: 40pt;
-    background-color: rgba(29, 29, 56, 0.432);
+    font-size: 45pt;
+    background-color: rgba(29, 29, 56, 0.822);
+    font-weight: bolder;
+    color: rgb(248, 6, 167);
   }
 
   .home-paragraph {
@@ -228,11 +231,30 @@ figure::after {
     margin-top: 3.75rem;
   }
 
+  .cindy-section,
+  .dawn-section {
+    margin-top: 15rem;
+  }
+
   header > img {
-    padding-top: 0rem;
+    padding-top: 2rem;
   }
 
   .second-picture {
     display: block;
+  }
+
+  .cindy-grid,
+  .dawn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dawn-video {
+    margin-top: 10rem;
+  }
+
+  .cindy-images {
+    height: 92.5vh;
   }
 }
