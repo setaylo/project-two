@@ -28,6 +28,14 @@ body {
 .paragraph-style {
   font-family: monospace;
   font-size: 14pt;
+  margin: 1rem;
+  color: white;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.credits {
+  padding-top: 5rem;
 }
 
 p,
@@ -152,16 +160,11 @@ figure::after {
 .aspect-ratio-16-9 {
   padding-top: 56.25%;
   position: relative;
-  z-index: -1;
-}
-
-.video-padding {
-  padding-top: 3rem;
 }
 
 .aspect-ratio-16-9 iframe {
   position: absolute;
-  top: 3.5rem;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
