@@ -234,7 +234,10 @@ figure::after {
     margin-top: 3.75rem;
   }
 
-  .cindy-section,
+  .cindy-section {
+    margin-top: 10rem;
+  }
+
   .dawn-section {
     margin-top: 15rem;
   }
@@ -253,11 +256,11 @@ figure::after {
     grid-template-columns: 1fr 1fr;
   }
 
-  .dawn-video {
-    margin-top: 10rem;
-  }
-
   .cindy-images {
     height: 92.5vh;
+  }
+
+  .dawn-video {
+    padding-top: 10rem;
   }
 }
