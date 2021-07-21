@@ -178,7 +178,11 @@ figure::after {
   scroll-snap-align: end;
 }
 
-@media (min-width: 1280px) {
+.second-picture {
+  display: none;
+}
+
+@media (min-width: 1065px) {
   .home-section {
     display: flex;
     flex-direction: column;
@@ -188,6 +192,11 @@ figure::after {
     margin-top: 0;
     margin-right: 3rem;
     margin-left: 3rem;
+  }
+
+  .paragraph-style {
+    margin-bottom: 0;
+    font-size: 11pt;
   }
 
   .dreamsauce {
@@ -208,5 +217,22 @@ figure::after {
   .navbar > ul {
     gap: 2rem;
     font-size: 20pt;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .about-section {
+    margin-top: 3.75rem;
+  }
+
+  header > img {
+    padding-top: 0rem;
+  }
+
+  .second-picture {
+    display: block;
   }
 }
